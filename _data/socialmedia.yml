@@ -1,22 +1,22 @@
 - name: GitHub
-  url: http://github.com/phlow
+  url: http://github.com/QIICR
   class: icon-github
-  title: Code und mehr...
+  title: "QIICR organization on GitHub"
 
 - name: YouTube
-  url: http://www.youtube.com/PhlowMedia
+  url: https://www.youtube.com/c/3DSlicerChannel
   class: icon-youtube
-  title: "Videos, Video-Anleitungen und Filme von Phlow auf YouTube"
+  title: "Tutorials, demonstrations and highlights of 3D Slicer, our delivery platform"
 
 - name: Twitter
-  url: http://twitter.com/phlow
+  url: http://twitter.com/itcr_qiicr
   class: icon-twitter
-  title: "Immer das Neuste von Phlow gibt es auf Twitter"
+  title: "QIICR project twitter page"
 
-- name: Mixcloud
-  url: http://www.mixcloud.com/phlow/
-  class: icon-cloud
-  title: "Mixe, was sonst?"
+#- name: Mixcloud
+#  url: http://www.mixcloud.com/phlow/
+#  class: icon-cloud
+#  title: "Mixe, was sonst?"
 
 # - name: Facebook
 #   url: http://www.facebook.com/

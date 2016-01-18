@@ -1,12 +1,14 @@
 ---
 layout: page
 title: "Contact"
-meta_title: "Contact and use our contact form"
-subheadline: "Wufoo-powered contact forms"
-teaser: "Get in touch with me? Use the contact form."
-permalink: "/contact/"
+permalink: "/contact.html"
 ---
-If you need a fabulous contact form for your website, I suggest you use [Wufoo][1]. You can use three forms for free, you get no spam and if you get more than 100 entries you have to pay.
 
+* Contact Andrey Fedorov directly: fedorov AT bwh.harvard.edu
+* [QIICR on Google+][1]
+* [QIICR on Twitter][2]
+* [QIICR Github organization][3]
 
- [1]: http://www.wufoo.com/
+ [1]: https://plus.google.com/+qiicrOrg
+ [2]: http://twitter.com/itcr_qiicr
+ [3]: https://github.com/QIICR
