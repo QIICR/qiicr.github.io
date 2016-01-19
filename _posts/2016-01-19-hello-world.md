@@ -15,7 +15,7 @@ years, but most of it was not ready to be advertised until very recently. At the
 the initial, very static version of our web-site was developed without any strategic thinking
 put into facilitating its updates.
 
-But all of this is now history. Over the last two days  are rolling out an updated version of the QIICR web site!
+But all of this is now history. Over the last two days we have been rolling out an updated version of the QIICR web site!
 The new site is designed to make it easier to update content, contribute blog posts, and provide improved
 experience to the visitor. After considering several choices, I decided to use [Jekyll][1] as the content
 delivery platform.
