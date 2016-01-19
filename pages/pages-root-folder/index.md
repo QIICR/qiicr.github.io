@@ -11,7 +11,7 @@ widget1:
   title: "Open software"
   url: 'https://github.com/QIICR'
   text: 'We are developing open source imaging informatics tools based on <a href="http://slicer.org">3D Slicer</a> to support research workflows of the <a href="http://imaging.cancer.gov/programsandresources/specializedinitiatives/qin">NCI Quantitative Imaging Network</a>.'
-  video: '<a href="#" data-reveal-id="videoModal"><img src="http://fedorov.github.io/feeling-responsive/images/slicer-youtube.jpg"  width="302" height="182" alt=""/></a>'
+  video: '<a href="#" data-reveal-id="videoModal"><img src="http://qiicr.org/images/slicer-youtube.jpg"  width="302" height="182" alt=""/></a>'
 
 widget2:
   title: "Open standards"
