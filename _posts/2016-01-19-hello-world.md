@@ -2,6 +2,7 @@
 layout: page
 title: "Hello, QIICR Blog!"
 teaser: "January 18, 2016: MLK day. Finally, snow in Boston. Updated qiicr.org."
+comments: true
 header:
   image_fullwidth: harvard-yard-snow.jpg
 categories:

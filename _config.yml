@@ -202,7 +202,7 @@ socialmedia:
 #
 # used in _includes/comments
 
-#disqus_shortname:
+disqus_shortname: qiicr
 
 
 #      _____
