@@ -20,7 +20,8 @@ commercial platforms using DICOM. The scope of that activity is descibed in
 [this poster][1], and has recently been highlighted in a [Kitware blog article][2].
 
 The video above is a screen recording demonstrating the process of interchange of segmentation
-results between [3D Slicer][5] and [Brainlab][3] PDM 2.2. David Flade from Brainlab and myself
+results between [3D Slicer][5] (DICOM communication layer powered by [DCMTK][7]) 
+and [Brainlab][3] PDM 2.2. David Flade from Brainlab and myself
 worked on this video in the last days of RSNA, but only yesterday we finished resolving
 all the administrative hurdles to make it publicly available. This video is also now
 included in the [DICOM interoperability playlist of the 3D Slicer YouTube channel][4].
@@ -43,3 +44,4 @@ analysis packages, both academic and commercial!
 [4]: https://www.youtube.com/channel/UC11x1iQ7ydSIFYw4L6wveXg/playlists
 [5]: http://slicer.org
 [6]: https://rsna2015.rsna.org/
+[7]: http://dcmtk.org/
