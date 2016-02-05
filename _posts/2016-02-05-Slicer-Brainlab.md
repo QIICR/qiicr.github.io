@@ -14,7 +14,7 @@ video:
     thumbnailUrl: ""
 ---
 
-One of the QIICR activities at the RSNA 2015 was our first iteration of a "connectathon"
+One of the QIICR activities at the [RSNA 2015][6] was our first iteration of a "connectathon"
 to demonstrate interoperability of image segmentation results between academic and
 commercial platforms using DICOM. The scope of that activity is descibed in
 [this poster][1], and has recently been highlighted in a [Kitware blog article][2].
@@ -42,3 +42,4 @@ analysis packages, both academic and commercial!
 [3]: https://www.brainlab.com
 [4]: https://www.youtube.com/channel/UC11x1iQ7ydSIFYw4L6wveXg/playlists
 [5]: http://slicer.org
+[6]: https://rsna2015.rsna.org/
