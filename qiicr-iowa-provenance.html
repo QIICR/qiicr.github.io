@@ -1,0 +1,163 @@
+<html>
+<head>
+    <script type="text/javascript" src="assets/js/vis.js"></script>
+    <link href="assets/css/vis.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+        #mynetwork {
+            width: 1200px;
+            height: 800px;
+            border: 1px solid lightgray;
+        }
+    </style>
+</head>
+<body>
+<div id="mynetwork"></div>
+
+<script type="text/javascript">
+    // create an array with nodes
+    var rwvmGroupShiftX = 500;
+    var rwvmGroupShiftY = -400;
+
+    var qiGroupShiftX = 550;
+    var qiGroupShiftY = -150;
+
+    var leftGroupShiftX = -500;
+    var leftGroupShiftY = -400;
+
+    var nodes = new vis.DataSet([
+      // Entities; default shape is ellipse
+        {id: "CT_ent", label: 'DICOM CT',shape:"box", color: "#fcfab1", fixed: true, x:-100, y:-450},
+        {id: "PET_ent", label: 'DICOM PET',shape:"box", color: "#fcfab1", fixed: true, x:100, y:-450}
+        ,
+        {id: "RWVM_ent", label: 'PET SUV RWVM',shape:"box", color: "#fcfab1", fixed: true, x:rwvmGroupShiftX, y:rwvmGroupShiftY},
+        {id: "LiverSEG_ent", label: 'Liver ROI SEG',shape:"box", color: "#fcfab1", fixed: true, x:-200, y:-350},
+        {id: "CerebellumSEG_ent", label: 'Cerebellum SEG',shape:"box", color: "#fcfab1", fixed: true, x:-200, y:-250},
+        {id: "AortaSEG_ent", label: 'Aortic arch SEG',shape:"box", color: "#fcfab1", fixed: true, x:-200, y:-150},
+        {id: "ManualTumorSEG_ent", label: 'Manual tumor and\nlymph nodes SEG',shape:"box", color: "#fcfab1", fixed: true, x:-200, y:-50},
+        {id: "AutoTumorSEG_ent", label: 'Auto tumor and\nlymph nodes SEG',shape:"box", color: "#fcfab1", fixed: true, x:-200, y:100},
+        {id: "LiverSR_ent", label: 'Liver ROI SR',shape:"box", color: "#fcfab1", fixed: true, x:200, y:-300},
+        {id: "CerebellumSR_ent", label: 'Cerebellum SR',shape:"box", color: "#fcfab1", fixed: true, x:200, y:-200},
+        {id: "AortaSR_ent", label: 'Aortic arch SR',shape:"box", color: "#fcfab1", fixed: true, x:200, y:-100},
+        {id: "ManualTumorSR_ent", label: 'Manual tumor and\nlymph nodes SR',shape:"box", color: "#fcfab1", fixed: true, x:200, y:0},
+        {id: "AutoTumorSR_ent", label: 'Auto tumor and\nlymph nodes SR',shape:"box", color: "#fcfab1", fixed: true, x:200, y:150},
+      // Activities; rectangles
+        {id: "SUVNorm_act", label: 'PET SUV normalization', shape: "box", shapeProperties:{borderRadius: 0}, color:"#9caeff" , fixed: true, x:rwvmGroupShiftX+100, y:rwvmGroupShiftY+50},
+        {id: "ReferenceSeg_act", label: 'Reference region\nsegmentation', shape: "box", shapeProperties:{borderRadius: 0}, color:"#9caeff", fixed: true, x:leftGroupShiftX, y:leftGroupShiftY },
+        {id: "TumorManualSeg_act", label: 'Tumor and lymph nodes\nmanual segmentation', shape: "box", shapeProperties:{borderRadius: 0}, color:"#9caeff", fixed: true, x:leftGroupShiftX, y:leftGroupShiftY+400 },
+        {id: "TumorAutoSeg_act", label: 'Tumor and lymph nodes\nautomatic segmentation', shape: "box", shapeProperties:{borderRadius: 0}, color:"#9caeff", fixed: true, x:leftGroupShiftX, y:leftGroupShiftY+600},
+        {id: "QICalc_act", label: 'Quantitative index\ncalculation', shape: "box", shapeProperties:{borderRadius: 0}, color:"#9caeff", fixed: true, x:qiGroupShiftX, y:qiGroupShiftY},
+      // Agents; triangles
+        {id: "SUVCalc_agent", label: 'SUV calculator',shape:"triangle", color: "#c9c300", fixed: true, x:rwvmGroupShiftX, y:rwvmGroupShiftY+100},
+        {id: "RefRegionSeg_agent", label: 'Reference region segmenter',shape:"triangle", color: "#c9c300", fixed:true, x:leftGroupShiftX, y:leftGroupShiftY+150 },
+        {id: "ManualTumorSeg_agent", label: 'Manual tumor and\nlymph nodes segmenter',shape:"triangle", color: "#c9c300", fixed: true, x:leftGroupShiftX, y:leftGroupShiftY+250 },
+        {id: "AutoTumorSeg_agent", label: 'Auto tumor and\nlymph nodes segmenter',shape:"triangle", color: "#c9c300", fixed: true, x:leftGroupShiftX+150, y:leftGroupShiftY+650 },
+        {id: "QICalc_agent", label: 'Quantitative index\ncalculator',shape:"triangle", color: "#c9c300", fixed: true, x:qiGroupShiftX, y:qiGroupShiftY+100},
+        {id: "Operator_agent", label: 'Operator',shape:"triangle", color: "#c9c300", fixed: true, x:leftGroupShiftX-100, y:leftGroupShiftY+500 }
+    ]);
+
+    // create an array with edges
+    var edges = new vis.DataSet([
+      // wasDerivedFrom edges
+
+        {from: "PET_ent", to: "RWVM_ent", arrows: { "to" : true}, label: "wasDerivedFrom"},
+        {from: "RWVM_ent", to: "LiverSEG_ent", arrows: { "to" : true}, label: "wasDerivedFrom"},
+        {from: "RWVM_ent", to: "CerebellumSEG_ent", arrows: { "to" : true}, label: "wasDerivedFrom"},
+        {from: "CT_ent", to: "AortaSEG_ent", arrows: { "to" : true}, label: "wasDerivedFrom"},
+        {from: "RWVM_ent", to: "ManualTumorSEG_ent", arrows: { "to" : true}, label: "wasDerivedFrom"},
+        {from: "RWVM_ent", to: "AutoTumorSEG_ent", arrows: { "to" : true}, label: "wasDerivedFrom"},
+
+        {from: "LiverSEG_ent", to: "LiverSR_ent", arrows: { "to" : true}, label: "wasDerivedFrom"},
+        {from: "CerebellumSEG_ent", to: "CerebellumSR_ent", arrows: { "to" : true}, label: "wasDerivedFrom"},
+        {from: "AortaSEG_ent", to: "AortaSR_ent", arrows: { "to" : true}, label: "wasDerivedFrom"},
+        {from: "ManualTumorSEG_ent", to: "ManualTumorSR_ent", arrows: { "to" : true}, label: "wasDerivedFrom"},
+        {from: "AutoTumorSEG_ent", to: "AutoTumorSR_ent", arrows: { "to" : true}, label: "wasDerivedFrom"},
+
+        {from: "RWVM_ent", to: "LiverSR_ent", arrows: { "to" : true}, label: "wasDerivedFrom"},
+        {from: "RWVM_ent", to: "CerebellumSR_ent", arrows: { "to" : true}, label: "wasDerivedFrom"},
+        {from: "RWVM_ent", to: "AortaSR_ent", arrows: { "to" : true}, label: "wasDerivedFrom"},
+        {from: "RWVM_ent", to: "ManualTumorSR_ent", arrows: { "to" : true}, label: "wasDerivedFrom"},
+        {from: "RWVM_ent", to: "AutoTumorSR_ent", arrows: { "to" : true}, label: "wasDerivedFrom"},
+
+      // wasAttributedTo edges
+        {from: "RWVM_ent", to: "SUVCalc_agent", arrows: { "to" : true}, label: "wasAttributedTo"},
+        {from: "LiverSEG_ent", to: "RefRegionSeg_agent", arrows: { "to" : true}, label: "wasAttributedTo"},
+        {from: "CerebellumSEG_ent", to: "RefRegionSeg_agent", arrows: { "to" : true}, label: "wasAttributedTo"},
+        {from: "AortaSEG_ent", to: "RefRegionSeg_agent", arrows: { "to" : true}, label: "wasAttributedTo"},
+        {from: "ManualTumorSEG_ent", to: "ManualTumorSeg_agent", arrows: { "to" : true}, label: "wasAttributedTo"},
+        {from: "AutoTumorSEG_ent", to: "AutoTumorSeg_agent", arrows: { "to" : true}, label: "wasAttributedTo"},
+        {from: "ManualTumorSEG_ent", to: "Operator_agent", arrows: { "to" : true}, label: "wasAttributedTo"},
+        {from: "AutoTumorSEG_ent", to: "Operator_agent", arrows: { "to" : true}, label: "wasAttributedTo"},
+
+        {from: "LiverSR_ent", to: "QICalc_agent", arrows: { "to" : true}, label: "wasAttributedTo"},
+        {from: "CerebellumSR_ent", to: "QICalc_agent", arrows: { "to" : true}, label: "wasAttributedTo"},
+        {from: "AortaSR_ent", to: "QICalc_agent", arrows: { "to" : true}, label: "wasAttributedTo"},
+        {from: "ManualTumorSR_ent", to: "QICalc_agent", arrows: { "to" : true}, label: "wasAttributedTo"},
+        {from: "AutoTumorSR_ent", to: "QICalc_agent", arrows: { "to" : true}, label: "wasAttributedTo"},
+
+      // wasGeneratedBy
+        {from: "RWVM_ent", to: "SUVNorm_act", arrows: { "to" : true}, label: "wasGeneratedBy"},
+        {from: "LiverSEG_ent", to: "ReferenceSeg_act", arrows: { "to" : true}, label: "wasGeneratedBy"},
+        {from: "CerebellumSEG_ent", to: "ReferenceSeg_act", arrows: { "to" : true}, label: "wasGeneratedBy"},
+        {from: "AortaSEG_ent", to: "ReferenceSeg_act", arrows: { "to" : true}, label: "wasGeneratedBy"},
+        {from: "ManualTumorSEG_ent", to: "TumorManualSeg_act", arrows: { "to" : true}, label: "wasGeneratedBy"},
+        {from: "AutoTumorSEG_ent", to: "TumorAutoSeg_act", arrows: { "to" : true}, label: "wasGeneratedBy"},
+
+        {from: "LiverSR_ent", to: "QICalc_act", arrows: { "to" : true}, label: "wasGeneratedBy"},
+        {from: "CerebellumSR_ent", to: "QICalc_act", arrows: { "to" : true}, label: "wasGeneratedBy"},
+        {from: "AortaSR_ent", to: "QICalc_act", arrows: { "to" : true}, label: "wasGeneratedBy"},
+        {from: "ManualTumorSR_ent", to: "QICalc_act", arrows: { "to" : true}, label: "wasGeneratedBy"},
+        {from: "AutoTumorSR_ent", to: "QICalc_act", arrows: { "to" : true}, label: "wasGeneratedBy"},
+
+      // wasAssociatedWith
+        {from: "SUVNorm_act", to: "SUVCalc_agent", arrows: { "to" : true}, label: "wasAssociatedWith"},
+        {from: "ReferenceSeg_act", to: "RefRegionSeg_agent", arrows: { "to" : true}, label: "wasAssociatedWith"},
+        {from: "TumorManualSeg_act", to: "ManualTumorSeg_agent", arrows: { "to" : true}, label: "wasAssociatedWith"},
+        {from: "TumorManualSeg_act", to: "Operator_agent", arrows: { "to" : true}, label: "wasAssociatedWith"},
+        {from: "TumorAutoSeg_act", to: "AutoTumorSeg_agent", arrows: { "to" : true}, label: "wasAssociatedWith"},
+        {from: "TumorAutoSeg_act", to: "Operator_agent", arrows: { "to" : true}, label: "wasAssociatedWith"},
+        {from: "QICalc_act", to: "QICalc_agent", arrows: { "to" : true}, label: "wasAssociatedWith"}
+
+    ]);
+
+    // create a network
+    var container = document.getElementById('mynetwork');
+
+    // provide the data in the vis format
+    var data = {
+        nodes: nodes,
+        edges: edges
+    };
+
+    var options = {
+       configure: true
+     };
+
+    var network = new vis.Network(container, data, options);
+
+    network.on("dragEnd", function (params) {
+      for (var i = 0; i < params.nodes.length; i++) {
+          var nodeId = params.nodes[i];
+          nodes.update({id: nodeId, fixed: {x: true, y: true}});
+      }
+    });
+    network.on('dragStart', function(params) {
+      for (var i = 0; i < params.nodes.length; i++) {
+          var nodeId = params.nodes[i];
+          nodes.update({id: nodeId, fixed: {x: false, y: false}});
+      }
+    });
+
+</script>
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
+        Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-44852938-1', 'qiicr.org');
+        ga('send', 'pageview');
+</script>
+</body>
+</html>
