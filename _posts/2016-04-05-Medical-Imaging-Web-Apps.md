@@ -16,6 +16,7 @@ event in person including Ron Kikinis, David Clunie, and me, Steve Pieper, while
 google hangout.  A [google document][2] was used to organize and document the meeting.
 
 Everyone will have their own conclusions but here are some things that stood out in my mind from the QIICR perspective:
+
  * A range of [ITCR][3] groups were well represented and each group had a clear focus with interest in collaborating and no overlaps of responsibility.
  * It was a nice chance to review the new approach that David Clunie and Daniel Rubin are taking to harmonize the [AIM][4] and DICOM SR approaches
  and to implement a good solution using the [TID 1500][5] approach.  While we didn't have time to work on this project
