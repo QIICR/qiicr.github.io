@@ -1,5 +1,6 @@
 ---
 layout: page
+author: pieper
 title: "Medical Imaging Webapp Software"
 teaser: "Kickoff meeting hosted at Stanford Medical School March 28, 2016."
 comments: true
