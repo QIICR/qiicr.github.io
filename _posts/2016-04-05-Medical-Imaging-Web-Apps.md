@@ -7,6 +7,14 @@ comments: true
 categories:
   - web
   - outreach
+
+header: no
+image:
+  title: Gabfest-Stanford2016.jpg
+  thumb: Gabfest-Stanford2016.jpg
+  homepage: Gabfest-Stanford2016.jpg
+  caption: Group photo at the end of the Stanford 2016 Gabfest
+  caption_url: https://goo.gl/n6N0aM
 ---
 
 
