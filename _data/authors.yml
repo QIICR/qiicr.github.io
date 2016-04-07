@@ -12,3 +12,9 @@ fedorov: # replace this with your info
   email:
   twitter:
 # you can add more authors here
+pieper: # replace this with your info
+  name: "Steve Pieper"
+  siterole: "developer, copywriter"
+  uri: https://github.com/pieper
+  email: pieper@isomics.com
+  twitter:
