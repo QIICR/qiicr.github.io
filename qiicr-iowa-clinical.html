@@ -1,0 +1,81 @@
+<html>
+<head>
+    <script type="text/javascript" src="assets/js/vis.js"></script>
+    <link href="assets/css/vis.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+        #mynetwork {
+            width: 1200px;
+            height: 800px;
+            border: 1px solid lightgray;
+        }
+    </style>
+</head>
+<body>
+<div id="mynetwork"></div>
+
+<script type="text/javascript">
+    // create an array with nodes
+    var rwvmGroupShiftX = 500;
+    var rwvmGroupShiftY = -400;
+
+    var qiGroupShiftX = 550;
+    var qiGroupShiftY = -150;
+
+    var leftGroupShiftX = -500;
+    var leftGroupShiftY = -400;
+
+    var edges = new vis.DataSet(
+    [{from:"CONTAINER0",to:"CODE0",label:"HAS CONCEPT MOD",font:{size:30}},{from:"CODE0",to:"CODE1",label:"HAS CONCEPT MOD",font:{size:30}},{from:"CONTAINER0",to:"CONTAINER1",label:"CONTAINS",font:{size:30}},{from:"CONTAINER1",to:"DATE0",label:"CONTAINS",font:{size:30}},{from:"CONTAINER1",to:"CODE2",label:"CONTAINS",font:{size:30}},{from:"CONTAINER1",to:"NUM0",label:"CONTAINS",font:{size:30}},{from:"CONTAINER1",to:"NUM1",label:"CONTAINS",font:{size:30}},{from:"CONTAINER1",to:"CODE3",label:"CONTAINS",font:{size:30}},{from:"CONTAINER1",to:"CODE4",label:"CONTAINS",font:{size:30}},{from:"CONTAINER0",to:"CONTAINER2",label:"CONTAINS",font:{size:30}},{from:"CONTAINER0",to:"CONTAINER3",label:"CONTAINS",font:{size:30}},{from:"CONTAINER3",to:"CODE5",label:"CONTAINS",font:{size:30}},{from:"CONTAINER3",to:"CODE6",label:"CONTAINS",font:{size:30}},{from:"CONTAINER3",to:"CODE7",label:"CONTAINS",font:{size:30}},{from:"CONTAINER0",to:"CONTAINER4",label:"CONTAINS",font:{size:30}},{from:"CONTAINER4",to:"CODE8",label:"CONTAINS",font:{size:30}},{from:"CONTAINER4",to:"CODE9",label:"CONTAINS",font:{size:30}},{from:"CONTAINER4",to:"CONTAINER5",label:"CONTAINS",font:{size:30}},{from:"CONTAINER5",to:"CODE10",label:"CONTAINS",font:{size:30}},{from:"CONTAINER5",to:"CODE11",label:"CONTAINS",font:{size:30}},{from:"CONTAINER5",to:"CODE12",label:"CONTAINS",font:{size:30}},{from:"CONTAINER0",to:"CONTAINER6",label:"CONTAINS",font:{size:30}},{from:"CONTAINER6",to:"CODE13",label:"CONTAINS",font:{size:30}},{from:"CONTAINER6",to:"CODE14",label:"CONTAINS",font:{size:30}},{from:"CONTAINER0",to:"CONTAINER7",label:"CONTAINS",font:{size:30}},{from:"CONTAINER7",to:"CONTAINER8",label:"CONTAINS",font:{size:30}},{from:"CONTAINER8",to:"DATE1",label:"CONTAINS",font:{size:30}},{from:"CONTAINER8",to:"TEXT0",label:"CONTAINS",font:{size:30}},{from:"CONTAINER7",to:"CONTAINER9",label:"CONTAINS",font:{size:30}},{from:"CONTAINER9",to:"DATE2",label:"CONTAINS",font:{size:30}},{from:"CONTAINER9",to:"TEXT1",label:"CONTAINS",font:{size:30}},{from:"CONTAINER0",to:"CONTAINER10",label:"CONTAINS",font:{size:30}},{from:"CONTAINER10",to:"CONTAINER11",label:"CONTAINS",font:{size:30}},{from:"CONTAINER11",to:"DATE3",label:"CONTAINS",font:{size:30}},{from:"CONTAINER11",to:"DATE4",label:"CONTAINS",font:{size:30}},{from:"CONTAINER11",to:"NUM2",label:"CONTAINS",font:{size:30}},{from:"CONTAINER11",to:"NUM3",label:"CONTAINS",font:{size:30}},{from:"CONTAINER10",to:"CONTAINER12",label:"CONTAINS",font:{size:30}},{from:"CONTAINER12",to:"DATE5",label:"CONTAINS",font:{size:30}},{from:"CONTAINER12",to:"DATE6",label:"CONTAINS",font:{size:30}},{from:"CONTAINER12",to:"CODE15",label:"CONTAINS",font:{size:30}},{from:"CONTAINER0",to:"CONTAINER13",label:"CONTAINS",font:{size:30}},{from:"CONTAINER13",to:"CONTAINER14",label:"CONTAINS",font:{size:30}},{from:"CONTAINER14",to:"CODE16",label:"CONTAINS",font:{size:30}},{from:"CODE16",to:"CODE17",label:"HAS PROPERTIES",font:{size:30}},{from:"CODE16",to:"CODE18",label:"HAS PROPERTIES",font:{size:30}},{from:"CODE16",to:"CODE19",label:"HAS PROPERTIES",font:{size:30}},{from:"CODE16",to:"CODE20",label:"HAS PROPERTIES",font:{size:30}},{from:"CONTAINER13",to:"CONTAINER15",label:"CONTAINS",font:{size:30}},{from:"CONTAINER0",to:"CONTAINER16",label:"CONTAINS",font:{size:30}},{from:"CONTAINER16",to:"DATE7",label:"CONTAINS",font:{size:30}},{from:"CONTAINER16",to:"CODE21",label:"CONTAINS",font:{size:30}}]
+    );
+
+    var nodes = new vis.DataSet(
+    [{id:"CODE0",label:"CODE:\nLanguage of Content Item and Descendants",shape:"dot",font:{size:30}},{id:"CONTAINER0",label:"CONTAINER:\nSummary Clinical Document",shape:"dot",font:{size:30}},{id:"CODE1",label:"CODE:\nCountry of Language = United States",shape:"dot",font:{size:30}},{id:"CONTAINER1",label:"CONTAINER:\nPatient Characteristics",shape:"dot",font:{size:30}},{id:"DATE0",label:"DATE:\nSubject Birth Date = 1942-12-29",shape:"dot",font:{size:30}},{id:"CODE2",label:"CODE:\nSubject Sex = Male",shape:"dot",font:{size:30}},{id:"NUM0",label:"NUM:\nPatient Height = 167",shape:"dot",font:{size:30}},{id:"NUM1",label:"NUM:\nPatient Weight = 66.2",shape:"dot",font:{size:30}},{id:"CODE3",label:"CODE:\nRacial group = Caucasian race",shape:"dot",font:{size:30}},{id:"CODE4",label:"CODE:\nHispanic = No",shape:"dot",font:{size:30}},{id:"CONTAINER2",label:"CONTAINER:\nProblem List",shape:"dot",font:{size:30}},{id:"CONTAINER3",label:"CONTAINER:\nSocial History",shape:"dot",font:{size:30}},{id:"CODE5",label:"CODE:\nTobacco Smoking Behavior = Current Smoker",shape:"dot",font:{size:30}},{id:"CODE6",label:"CODE:\nAlcohol consumption = None",shape:"dot",font:{size:30}},{id:"CODE7",label:"CODE:\nDetails of tobacco chewing = Does not chew tobacco",shape:"dot",font:{size:30}},{id:"CONTAINER4",label:"CONTAINER:\nTumor Staging",shape:"dot",font:{size:30}},{id:"CODE8",label:"CODE:\nPrimary tumor site = base of tongue",shape:"dot",font:{size:30}},{id:"CODE9",label:"CODE:\nTumor stage finding = Clinical Stage III",shape:"dot",font:{size:30}},{id:"CONTAINER5",label:"CONTAINER:\nTNM Category",shape:"dot",font:{size:30}},{id:"CODE10",label:"CODE:\nT Stage = Tumor Stage T2",shape:"dot",font:{size:30}},{id:"CODE11",label:"CODE:\nN Stage = Node Stage N1",shape:"dot",font:{size:30}},{id:"CODE12",label:"CODE:\nM Stage = Metastasis Stage M0",shape:"dot",font:{size:30}},{id:"CONTAINER6",label:"CONTAINER:\nPast medical history",shape:"dot",font:{size:30}},{id:"CODE13",label:"CODE:\nHistory of radiation therapy = Not performed",shape:"dot",font:{size:30}},{id:"CODE14",label:"CODE:\nHistory of malignant neoplasm = No history of malignant neoplastic disease",shape:"dot",font:{size:30}},{id:"CONTAINER7",label:"CONTAINER:\nDiagnostic Procedure",shape:"dot",font:{size:30}},{id:"CONTAINER8",label:"CONTAINER:\nBiopsy",shape:"dot",font:{size:30}},{id:"DATE1",label:"DATE:\nDate of procedure = 1986-07-22",shape:"dot",font:{size:30}},{id:"TEXT0",label:"TEXT:\nBiopsy Site = R Neck",shape:"dot",font:{size:30}},{id:"CONTAINER9",label:"CONTAINER:\nBiopsy",shape:"dot",font:{size:30}},{id:"DATE2",label:"DATE:\nDate of procedure = 1986-08-11",shape:"dot",font:{size:30}},{id:"TEXT1",label:"TEXT:\nBiopsy Site = R Base of Tongue",shape:"dot",font:{size:30}},{id:"CONTAINER10",label:"CONTAINER:\nTherapeutic Procedure",shape:"dot",font:{size:30}},{id:"CONTAINER11",label:"CONTAINER:\nRadiotherapy Procedure",shape:"dot",font:{size:30}},{id:"DATE3",label:"DATE:\nDate treatment started = 1986-09-08",shape:"dot",font:{size:30}},{id:"DATE4",label:"DATE:\nDate treatment stopped = 1986-11-02",shape:"dot",font:{size:30}},{id:"NUM2",label:"NUM:\nTotal radiation dose delivered = 70",shape:"dot",font:{size:30}},{id:"NUM3",label:"NUM:\nRadiation dose per fraction = 2",shape:"dot",font:{size:30}},{id:"CONTAINER12",label:"CONTAINER:\nChemotherapy",shape:"dot",font:{size:30}},{id:"DATE5",label:"DATE:\nDate treatment started = 1986-09-10",shape:"dot",font:{size:30}},{id:"DATE6",label:"DATE:\nDate treatment stopped = 1986-11-03",shape:"dot",font:{size:30}},{id:"CODE15",label:"CODE:\nAntineoplastic agent = Platinum",shape:"dot",font:{size:30}},{id:"CONTAINER13",label:"CONTAINER:\nPathology of original tumor",shape:"dot",font:{size:30}},{id:"CONTAINER14",label:"CONTAINER:\nPathology Results",shape:"dot",font:{size:30}},{id:"CODE16",label:"CODE:\nPathology",shape:"dot",font:{size:30}},{id:"CODE17",label:"CODE:\nHistological grade finding = Grade 2: moderately differentiated",shape:"dot",font:{size:30}},{id:"CODE18",label:"CODE:\nMalignancy Type = Invasive carcinoma",shape:"dot",font:{size:30}},{id:"CODE19",label:"CODE:\nPerineural invasion finding = Perineural invasion by tumor absent",shape:"dot",font:{size:30}},{id:"CODE20",label:"CODE:\nStatus of vascular invasion by tumor = Vascular invasion by tumor absent",shape:"dot",font:{size:30}},{id:"CONTAINER15",label:"CONTAINER:\nExcision of cervical lymph nodes group",shape:"dot",font:{size:30}},{id:"CONTAINER16",label:"CONTAINER:\nDisease Outcome",shape:"dot",font:{size:30}},{id:"DATE7",label:"DATE:\nFollow-up visit date = 1992-03-30",shape:"dot",font:{size:30}},{id:"CODE21",label:"CODE:\nFollowup status = No evidence of disease",shape:"dot",font:{size:30}}]
+    );
+    // create a network
+    var container = document.getElementById('mynetwork');
+
+    // provide the data in the vis format
+    var data = {
+        nodes: nodes,
+        edges: edges
+    };
+
+    var options = {
+       configure: true,
+       layout: {
+                    hierarchical: {
+                        direction: "LR",
+                        levelSeparation: 900,
+                    }
+                }
+     };
+
+    var network = new vis.Network(container, data, options);
+
+    network.on("dragEnd", function (params) {
+      for (var i = 0; i < params.nodes.length; i++) {
+          var nodeId = params.nodes[i];
+          nodes.update({id: nodeId, fixed: {x: true, y: true}});
+      }
+    });
+    network.on('dragStart', function(params) {
+      for (var i = 0; i < params.nodes.length; i++) {
+          var nodeId = params.nodes[i];
+          nodes.update({id: nodeId, fixed: {x: false, y: false}});
+      }
+    });
+
+</script>
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
+        Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-44852938-1', 'qiicr.org');
+        ga('send', 'pageview');
+</script>
+</body>
+</html>
