@@ -15,8 +15,8 @@ widget1:
 
 widget2:
   title: "Open standards"
-  url: 'http://dicom.nema.org/Dicom/about-DICOM.html'
-  image: dcmdump-small.jpg
+  url: 'https://peerj.com/articles/2057/'
+  image: peerj-graphical-abstract.jpg
   text: 'We aim to support interoperable exchange of quantitative image analysis results using <a href="http://dicom.nema.org/Dicom/about-DICOM.html">Digital Imaging and Communications in Medicine (DICOM) standard</a>.'
 
 widget3:
