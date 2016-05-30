@@ -29,12 +29,13 @@ related web application topics for medical image.  I was pleased to be able to h
 
 The [working document for the event][7] really tells the whole story so no need to repeat it here.  The document has three basic
 sections: 
+
  * first, there are planning notes from before the event; 
  * second, there are discussion notes and links created during the event; 
  * and finally there are screenshots and descriptions of some of the results achieved during the week.
 
-I was really amazed at how much was accomplished and we have some fundamental building blocks that will benefit
-many projects.  The results ranged from DICOM Segmentation Object interoperability, interactive annotation
+I was really amazed at how much was accomplished. We have some fundamental building blocks that will benefit
+many projects and we got to know each other.  The results ranged from DICOM Segmentation Object interoperability, interactive annotation
 and painting tools, pure JavaScript DICOM reading/writing tools, and WebGL GPU accelerated rendering.
 
 Above all it was remarkable that everyone was 100% agreed on fully open licenses (MIT, BSD, Apache, 3D Slicer, etc.  No GPL and no "academic only" restrictions)
