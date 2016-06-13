@@ -11,7 +11,7 @@ widget1:
   title: "Open software"
   url: 'https://github.com/QIICR'
   text: 'We are developing open source imaging informatics tools based on <a href="http://slicer.org">3D Slicer</a> to support research workflows of the <a href="http://imaging.cancer.gov/programsandresources/specializedinitiatives/qin">NCI Quantitative Imaging Network</a>.'
-  video: '<a href="#" data-reveal-id="videoModal"><img src="http://qiicr.org/images/slicer-youtube.jpg"  width="302" height="182" alt=""/></a>'
+  video: '<a href="#" data-reveal-id="slicerVideo"><img src="http://qiicr.org/images/slicer-youtube.jpg"  width="302" height="182" alt=""/></a>'
 
 widget2:
   title: "Open standards"
@@ -23,7 +23,7 @@ widget3:
   title: "Open science"
   url: '/about.html'
   text: 'Our ultimate goal is to support open and reproducible science in quantitative imaging biomarker development for cancer imaging research.'
-  video: '<a href="#" data-reveal-id="videoModal"><img src="http://qiicr.org/images/qiicr-demo-youtube.png"  width="302" height="182" alt=""/></a>'
+  video: '<a href="#" data-reveal-id="qiicrVideo"><img src="http://qiicr.org/images/qiicr-demo-youtube.png"  width="302" height="182" alt=""/></a>'
 #
 # Use the call for action to show a button on the frontpage
 #
@@ -46,9 +46,18 @@ permalink: /index.html
 homepage: true
 ---
 
-<div id="videoModal" class="reveal-modal large" data-reveal="">
+<div id="slicerVideo" class="reveal-modal large" data-reveal="">
   <div class="flex-video widescreen vimeo" style="display: block;">
     <iframe width="1280" height="720" src="https://www.youtube.com/embed/ikK5uDEmihU" frameborder="0" allowfullscreen></iframe>
   </div>
   <a class="close-reveal-modal">&#215;</a>
 </div>
+
+<div id="qiicrVideo" class="reveal-modal large" data-reveal="">
+  <div class="flex-video widescreen vimeo" style="display: block;">
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/wK2TGyVQjzs" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
