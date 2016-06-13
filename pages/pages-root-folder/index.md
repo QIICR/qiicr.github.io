@@ -22,8 +22,8 @@ widget2:
 widget3:
   title: "Open science"
   url: '/about.html'
-  image: widget-github-303x182.jpg
   text: 'Our ultimate goal is to support open and reproducible science in quantitative imaging biomarker development for cancer imaging research.'
+  video: '<a href="#" data-reveal-id="videoModal"><img src="http://qiicr.org/images/qiicr-demo-youtube.png"  width="302" height="182" alt=""/></a>'
 #
 # Use the call for action to show a button on the frontpage
 #
