@@ -6,7 +6,7 @@
 #
 layout: frontpage
 header:
-  image_fullwidth: bx-review.jpg
+  image_fullwidth: chicago-lakeside.jpg
 widget1:
   title: "Open software"
   url: 'https://github.com/QIICR'
