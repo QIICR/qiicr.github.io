@@ -22,7 +22,7 @@ Several tools are available for this task, however some of the popular tools com
 
 We have recently developed a plugin for the [Atom][1] editor (package, in the nomenclature of Atom) that provides a convenient interface within the editor to the output produced by the [DCMTK][2] DICOM dump tools. [Atom][1] is a an extensible, versatile, free open source modern editor brought to you by GitHub.
 
-Once [dicom-dump package][5] is installed, you can open a DICOM file in Atom from command line, or by dropping the file into the editor window, and access the functionality demonstrated above. You can access both [dcmdump][3] (view the DICOM file dump at the attribute level) and [dsrdump][4] (view the DICOM file dump at the level of Structured Report content tree) command line tools of DCMTK using the interface of this package.
+Once [dicom-dump package][5] is installed and properly configured with your local installation of DCMTK tools, you can open any DICOM file in Atom from command line, or by dropping the file into the editor window, and access the functionality demonstrated above. You can access both [dcmdump][3] (view the DICOM file dump at the attribute level) and [dsrdump][4] (view the DICOM file dump at the level of Structured Report content tree) command line tools of DCMTK using the interface of this package.
 
 As always, the source code of this package is open and we welcome your contributions to further improving its functionality!
 
