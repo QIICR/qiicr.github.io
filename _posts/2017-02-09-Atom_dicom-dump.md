@@ -1,6 +1,6 @@
 ---
 layout: page
-author: pieper
+author: fedorov
 title: "dicom-dump package for Atom"
 teaser: "Explore DICOM content from a modern editor!"
 comments: true
@@ -9,8 +9,8 @@ categories:
 
 header: no
 image:
-  title: Atom dicom-dump demo
-  thumb: 
+  title: atom-dicom_dump-demo.gif
+  thumb: atom-dicom_dump-demo.gif
   homepage: atom-dicom_dump-demo.gif
   caption: Atom dicom-dump in action
   caption_url: https://atom.io/packages/dicom-dump
