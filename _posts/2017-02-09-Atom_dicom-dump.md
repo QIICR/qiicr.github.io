@@ -5,7 +5,7 @@ title: "dicom-dump package for Atom"
 teaser: "Explore DICOM content from a modern editor!"
 comments: true
 categories:
-  - web
+  - DICOM
 
 header: no
 image:
