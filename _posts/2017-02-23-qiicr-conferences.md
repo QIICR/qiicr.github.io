@@ -3,8 +3,10 @@ layout: page
 title: "Meet us at AMIA Joint Summits and MICCAI 2017!"
 teaser: "Increasing presence of QIICR at professional conferences"
 comments: true
-header:
-  image_fullwidth: amia-miccai-2017.jpg
+header: no
+
+image: 
+  thumb: amia-miccai-2017.jpg
 categories:
   - events
 ---
