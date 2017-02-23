@@ -7,6 +7,10 @@ header: no
 
 image: 
   thumb: amia-miccai-2017.jpg
+  title: amia-miccai-2017.jpg
+  homepage:
+  caption:
+  caption_url:
 categories:
   - events
 ---
