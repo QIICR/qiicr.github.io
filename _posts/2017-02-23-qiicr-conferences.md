@@ -8,9 +8,9 @@ header: no
 image: 
   thumb: amia-miccai-2017.jpg
   title: amia-miccai-2017.jpg
-  homepage:
-  caption:
-  caption_url:
+  homepage: http://qiicr.org/events/qiicr-conferences/
+  caption: QIICR presence at AMIA and MICCAI
+  caption_url: http://qiicr.org/events/qiicr-conferences/
 categories:
   - events
 ---
