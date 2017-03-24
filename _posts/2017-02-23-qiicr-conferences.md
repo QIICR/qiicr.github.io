@@ -40,6 +40,7 @@ our goal is to encourage the MICCAI community to take a fresh look at the DICOM 
 new capabilities and tools we have been developing in the past few years. Our program includes talks by Ron Kikinis
 and David Clunie, and plenty of time for hands-on with such open source software tools as the newly released [_dcmqi_ library][5],
 [3D Slicer][3] and [MITK][4] that utilize _dcmqi_ to enable DICOM-based exchange of the quantitative image analysis results.
+More materials will be added to the tutorial web site as we prepare for this event: http://qiicr.org/dicom4miccai.
 
 We look forward to meeting you at these and other events! If you want to connect and talk in person, send a message 
 to Andrey Fedorov!
