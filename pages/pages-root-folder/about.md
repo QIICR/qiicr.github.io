@@ -24,7 +24,7 @@ We are a team of clinical researchers, computer scientists, software engineers a
 informaticians with the common vision of advancing cancer imaging research via
 multi-disciplinary collaboration, with the help of open source software.
 
-[1]: http://imaging.cancer.gov/programsandresources/specializedinitiatives/qin
-[2]: http://imaging.cancer.gov/programsandresources/specializedinitiatives/qin/bwhospital
-[3]: http://imaging.cancer.gov/programsandresources/specializedinitiatives/qin/iowa
-[4]: http://imaging.cancer.gov/programsandresources/specializedinitiatives/qin/mgh
+[1]: https://imaging.cancer.gov/programs_resources/specialized_initiatives/qin.htm
+[2]: https://imaging.cancer.gov/programs_resources/specialized_initiatives/qin/qinsites/bwhospital.htm
+[3]: https://imaging.cancer.gov/programs_resources/specialized_initiatives/qin/qinsites/iowa.htm
+[4]: https://imaging.cancer.gov/programs_resources/specialized_initiatives/qin/qinsites/mgh.htm
