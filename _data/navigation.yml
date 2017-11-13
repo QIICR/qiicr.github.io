@@ -5,6 +5,11 @@
 - title: About
   url: "/about.html"
   side: left
+
+- title: Tools
+  url: "/tools.html"
+  side: left
+
 #  dropdown:
 #  - title: "BWH"
 #    url: "/design/grid/"
