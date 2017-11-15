@@ -19,7 +19,7 @@
 #    url: "/design/page/"
 
 - title: Events
-  url: "https://github.com/QIICR/ProjectIssuesAndWiki/wiki/Events"
+  url: "/events.html"
   side: left
 
 - title: Wiki
