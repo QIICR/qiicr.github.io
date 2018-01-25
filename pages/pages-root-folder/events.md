@@ -16,8 +16,8 @@ subheadline: "Presentations, tutorials, meetings"
 ### 2017
 * January 9-13: [Winter Project week in Boston](https://na-mic.github.io/ProjectWeek/PW27_2018_Boston/)
 * November 26-30: 103rd Annual Meeting of the Radiological Society of North America, RSNA 2016, Chicago, IL. See the full schedule [here](http://wiki.na-mic.org/Wiki/index.php/RSNA_2017)
- *  Quantitative Imaging Reading Room (QIRR) booth: [Interoperable Communication of Quantitative Image Analysis Results Using the DICOM Standard (DICOM4QI)](https://qiicr.gitbooks.io/dicom4qi/)
- *  RSNA refresher course RC425: Quantitative Image Analysis Tools: Informatics tools and databases. Andrey Fedorov: "Quantitative image analysis tools: Communicating quantitative image analysis results"
+    *  Quantitative Imaging Reading Room (QIRR) booth: [Interoperable Communication of Quantitative Image Analysis Results Using the DICOM Standard (DICOM4QI)](https://qiicr.gitbooks.io/dicom4qi/)
+    *  RSNA refresher course RC425: Quantitative Image Analysis Tools: Informatics tools and databases. Andrey Fedorov: "Quantitative image analysis tools: Communicating quantitative image analysis results"
 * November 11: Alliance for Clinical Trials in Oncology annual meeting. Andrey Fedorov (QIICR) and Michael Jacobs (Johns Hopkins) presented to the Genitourinary Committee on the Quantitative Imaging Network and QIICR-developed tools.
 * September 10: Tutorial at the 2017 Medical Image Computing and Computer Assisted Interventions (MICCAI) conference: ["21st Century DICOM for Quantitative Imaging Research: Why, What, and How"](http://qiicr.org/dicom4miccai/)
 * June 17: [Invited presentation at University of Bremen: Andrey Fedorov, "DICOM for Medical Image Computing Research"](http://ioi.cs.uni-bremen.de/?p=1246)
@@ -25,16 +25,16 @@ subheadline: "Presentations, tutorials, meetings"
 
 ### 2016
 * November 27-December 2: 102nd Annual Meeting of the Radiological Society of North America, RSNA 2016, Chicago, IL. See the full schedule [here](http://wiki.na-mic.org/Wiki/index.php/RSNA_2016)
- *  Quantitative Imaging Reading Room (QIRR) booth: [Interoperable Communication of Quantitative Image Analysis Results Using the DICOM Standard (DICOM4QI)](https://qiicr.gitbooks.io/dicom4qi/)
+    *  Quantitative Imaging Reading Room (QIRR) booth: [Interoperable Communication of Quantitative Image Analysis Results Using the DICOM Standard (DICOM4QI)](https://qiicr.gitbooks.io/dicom4qi/)
 * January 4-8: [Winter Project week in Boston](http://wiki.na-mic.org/Wiki/index.php/2016_Winter_Project_Week)
 * April 27: Invited presentation at the 2016 Gloria and Mark Snyder Symposium for Cancer Medicine, Stony Brook, NY.
 
 ### 2015
 * November 26 - December 4: A number of QIICR and 3D Slicer events took place at the 101th Annual Meeting of the Radiological Society of North America, RSNA 2015, Chicago, IL. See the full schedule [here](http://wiki.na-mic.org/Wiki/index.php/RSNA_2015)
- * RSNA refresher course RCA22: A Practical Introduction to Structured Reporting Tools and Resources
+    * RSNA refresher course RCA22: A Practical Introduction to Structured Reporting Tools and Resources
 Justin Kirby, Pattanasak Mongkolwat, Daniel L. Rubin, David A. Clunie, Andriy Fedorov ([slides by Andrey Fedorov](http://dx.doi.org/10.6084/m9.figshare.1618826))
- * RSNA refresher course RC825B: Quantitative Image Analysis Tools: Informatics tools and databases ([slides by Andrey Fedorov](http://dx.doi.org/10.6084/m9.figshare.1618827))
- * Quantitative Imaging Reading Room exhibit: Interoperable communication of quantitative image analysis results using DICOM standard ([poster](http://dx.doi.org/10.6084/m9.figshare.1619877))
+    * RSNA refresher course RC825B: Quantitative Image Analysis Tools: Informatics tools and databases ([slides by Andrey Fedorov](http://dx.doi.org/10.6084/m9.figshare.1618827))
+    * Quantitative Imaging Reading Room exhibit: Interoperable communication of quantitative image analysis results using DICOM standard ([poster](http://dx.doi.org/10.6084/m9.figshare.1619877))
 * October 19-21: Fall 2015 CI4CC Symposium and Workshop: Quantitative Image Informatics for Cancer Research (QIICR) presentation by Andrey Fedorov ([slides](https://goo.gl/MDq0u8)), San Diego, CA
 * May 27-28: ITCR annual face-to-face meeting, Sand Diego, CA
 * June 21-24: [Summer Project Week 2015](http://wiki.na-mic.org/Wiki/index.php/2015_Summer_Project_Week)
