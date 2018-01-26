@@ -12,9 +12,10 @@ subheadline: "Presentations, tutorials, meetings"
 ## Past events
 
 ### 2018
+* January 8-12: [Winter Project week in Boston](https://na-mic.github.io/ProjectWeek/PW27_2018_Boston/)
 
 ### 2017
-* January 9-13: [Winter Project week in Boston](https://na-mic.github.io/ProjectWeek/PW27_2018_Boston/)
+* January 9-13: [Winter Project week in Boston](https://na-mic.org/wiki/2017_Winter_Project_Week)
 * November 26-30: 103rd Annual Meeting of the Radiological Society of North America, RSNA 2016, Chicago, IL. See the full schedule [here](http://wiki.na-mic.org/Wiki/index.php/RSNA_2017)
     *  Quantitative Imaging Reading Room (QIRR) booth: [Interoperable Communication of Quantitative Image Analysis Results Using the DICOM Standard (DICOM4QI)](https://qiicr.gitbooks.io/dicom4qi/)
     *  RSNA refresher course RC425: Quantitative Image Analysis Tools: Informatics tools and databases. Andrey Fedorov: "Quantitative image analysis tools: Communicating quantitative image analysis results"
