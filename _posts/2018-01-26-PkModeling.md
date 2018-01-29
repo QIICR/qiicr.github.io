@@ -19,6 +19,10 @@ This module also generates maps of some empirical (model-independent) parameters
 
 Modeling can be parameterized using the patient-specific Arterial Input Function (AIF), or a population-averaged AIF.
 
+# Availability
+
+**Installation**: _PkModeling_ can be installed as an extension to 3D Slicer via 3D Slicer _Extension manager_. You can also build _PkModeling_ as a standalone tool independent of 3D Slicer.
+
 **Documentation**: [link](https://www.slicer.org/wiki/Documentation/Nightly/Modules/PkModeling)
 
 **Source code**: [link](https://github.com/millerjv/PkModeling)
