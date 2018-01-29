@@ -15,6 +15,7 @@ permalink: "blog/archive/"
 		<dl class="accordion" data-accordion>
 			{% assign counter = 1 %}
 			{% for post in site.posts limit:1000 %}
+      {% if post.category != "tool" %}
 			<dd class="accordion-navigation">
 			<a href="#panel{{ counter }}"><span class="iconfont"></span> {% if post.subheadline %}{{ post.subheadline }} › {% endif %}<strong>{{ post.title }}</strong></a>
 				<div id="panel{{ counter }}" class="content">
@@ -23,6 +24,8 @@ permalink: "blog/archive/"
 				</div>
 			</dd>
 			{% assign counter=counter | plus:1 %}
+      {% else if %}
+      {% endif %}
 			{% endfor %}
 		</dl>
 	</div><!-- /.small-12.columns -->
