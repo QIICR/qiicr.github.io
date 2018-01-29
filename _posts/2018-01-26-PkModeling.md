@@ -1,0 +1,35 @@
+---
+layout: page
+title: "PkModeling: DCE MRI modeling"
+teaser: "3D Slicer extension for Tofts modeling of DCE MRI"
+comments: true
+header:
+  image_fullwidth: beacon.jpg
+categories:
+  - tool
+---
+
+# About
+
+PkModeling is an extension of 3D Slicer that implements Tofts model fit to Dynamic Contrast Enhanced MRI signal. As a result PkModeling can be used to generate quantitative maps of Tofts model parameters:
+* _Ktrans_ - volume transfer constant between blood plasma and EES (extracellular-extravascular space)
+* _ve_ - fractional volume for extracellular space
+
+This module also generates maps of some empirical (model-independent) parameters: time to peak (TTP) and area under the signal curve (AUC).
+
+Modeling can be parameterized using the patient-specific Arterial Input Function (AIF), or a population-averaged AIF.
+
+**Documentation**: [link](https://www.slicer.org/wiki/Documentation/Nightly/Modules/PkModeling)
+
+**Source code**: [link](https://github.com/millerjv/PkModeling)
+
+# Publications
+
+* Huang W, Li X, Chen Y, et al. Variations of dynamic contrast-enhanced magnetic resonance imaging in evaluation of breast cancer therapy response: a multicenter data analysis challenge. Transl Oncol. 2014;7(1):153–166 [link](http://dx.doi.org/10.1593/tlo.13838). - _Quantitative Imaging Network (QIN) evaluation of DCE MRI modeling tools that included PkModeling_
+* Mehrtash A, Gupta SN, Shanbhag D, et al. Bolus arrival time and its effect on tissue characterization with dynamic contrast-enhanced magnetic resonance imaging. J Med Imaging (Bellingham). 2016;3(1):014503 [link](http://dx.doi.org/10.1117/1.JMI.3.1.014503). - _Investigation of one of the parameters influencing DCE MRI analysis that utilized PkModeling_
+
+# Grants support
+
+* U54 EB005149
+* U01 CA151261
+* U24 CA180918
