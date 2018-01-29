@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "PETTumorSegmentation: Semi-automatic segmentation of tumors"
-teaser: "3D Slicer extension for "just enough interaction" segmentation"
+title: "PETTumorSegmentation: Semi-automatic segmentation of tumors in PET"
+teaser: "3D Slicer extension for \"just enough interaction\" segmentation"
 comments: true
 header:
   image_fullwidth: beacon.jpg
