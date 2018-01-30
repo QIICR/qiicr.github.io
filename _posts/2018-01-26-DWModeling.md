@@ -18,6 +18,8 @@ _DWModeling_ is module within the _SlicerProstate_ extension of 3D Slicer that i
 * gamma distribution
 * stretched exponential
 
+This extension can be used together with the [MultiVolume Explorer](https://www.slicer.org/wiki/Documentation/Nightly/Modules/MultiVolumeExplorer) module of 3D Slicer. _MultiVolume Explorer_ module allows to interactively visualize the signal curve at the individual pixels, and also examine the quality of model fit relative to the original data.
+
 # Availability
 
 **Installation**: _DWModeling_ can be accessed by installing the _SlicerProstate_ extension to 3D Slicer via 3D Slicer _Extension manager_.
