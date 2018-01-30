@@ -11,7 +11,7 @@ categories:
 
 # About
 
-_TCIABrowser_ is an extension of 3D Slicer that allows to explore imaging and related clinical metadata for the public datasets within [The Cancer Imaging Archive (TCIA)](http://thecancerimagingarchive.net/), and download imaging datasets for local processing.
+_TCIABrowser_ is an extension of 3D Slicer that allows to explore imaging and related TCGA metadata for the public datasets within [The Cancer Imaging Archive (TCIA)](http://thecancerimagingarchive.net/), and download imaging datasets for local processing.
 
 # Availability
 

@@ -9,6 +9,8 @@ categories:
   - tool
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_7oZygGp2ds?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 # About
 
 The _SegmentationWizard_ module allows users to quickly create smooth, 3D regions of interest with only a few clicks, and then provides a variety of tools to threshold and refine those regions of interest. The module is broken up into several steps, which the user can progress through with "Back" and "Next" buttons on the bottom of the module panel. The module can be used on single volumes, or on pre- and post-contrast pairs. In the latter case, utilities for registering, normalizing, and subtracting volumes are provided.

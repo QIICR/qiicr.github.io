@@ -9,6 +9,8 @@ categories:
   - tool
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/k1GbJliipuc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 # About
 
 _PETTumorSegmentation_ is an extension of 3D Slicer that provides "just enough interaction" tools for automated segmentation of metabolically active regions in Positron Emission Tomography (PET) images. The extension provides segmentation tools implemented as "effects" for the 3D Slicer _Segment Editor_ and legacy _Editor_ modules. As such, these tools can be used in combination with the other automated and manual segmentation approaches already available in those modules. These effects are also available within the _Quantitative Reporting_ module of 3D Slicer.
