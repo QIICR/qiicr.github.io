@@ -3,7 +3,7 @@ layout: page
 title: "QuantitativeReporting: Interactive standardized annotation of DICOM data"
 teaser: "3D Slicer extension for annotation of DICOM images with the support of standardized representation of the annotation results"
 header:
-  image_fullwidth: beacon.jpg
+  image_fullwidth: QuantitativeReporting.jpg
 categories:
   - tool
 ---
