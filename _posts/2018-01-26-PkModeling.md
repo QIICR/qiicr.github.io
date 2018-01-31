@@ -4,7 +4,7 @@ title: "PkModeling: DCE MRI modeling"
 teaser: "3D Slicer extension for Tofts modeling of DCE MRI"
 comments: true
 header:
-  image_fullwidth: beacon.jpg
+  image_fullwidth: PkModeling.jpg
 categories:
   - tool
 ---

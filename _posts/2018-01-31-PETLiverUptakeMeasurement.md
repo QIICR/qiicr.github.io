@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "PETLiverUptakeMeasurement: Automated measurement of liver uptake PET"
-teaser: "3D Slicer extension automated measurement of liver uptake PET scans"
+title: "PETLiverUptakeMeasurement: Automated measurement of liver uptake in PET"
+teaser: "3D Slicer extension for automated measurement of liver uptake in PET scans"
 comments: true
 header:
   image_fullwidth: beacon.jpg
