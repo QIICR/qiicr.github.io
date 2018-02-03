@@ -29,6 +29,8 @@ _PETTumorSegmentation_ is an extension of 3D Slicer that provides "just enough i
 
 * Fedorov A, Clunie D, Ulrich E, et al. DICOM for quantitative imaging biomarker development: a standards based approach to sharing clinical data and structured PET/CT analysis results in head and neck cancer research. PeerJ. 2016;4:e2057 [link](http://dx.doi.org/10.7717/peerj.2057) - _This publication describes the dataset that includes segmentations produced using the PETTumorSegmentation tool_.
 
+* Beichel RR, Smith BJ, Bauer C, et al. Multi-site quality and variability analysis of 3D FDG PET segmentations based on phantom and clinical image data. Med Phys. 2017;44(2):479–496http://dx.doi.org/10.1002/mp.12041. - _This publication applied the PETTumorSegmentationTool in the context of a community challenge organized by the NCI Quantitative Imaging Network (QIN)_
+
 # Grants support
 
 * U01 CA140206
