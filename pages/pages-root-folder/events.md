@@ -7,12 +7,11 @@ subheadline: "Presentations, tutorials, meetings"
 
 ## Upcoming events
 
-* February 13, 2018: [Molecular Med TRI-CON Precision Medicine](http://www.triconference.com/Precision-Medicine/): Andrey Fedorov presents at the "Emerging Role of Radiomics in Precision Medicine" session on "Data Standards in Radiomics Research"
-
 ## Past events
 
 ### 2018
 * January 8-12: [Winter Project week in Boston](https://na-mic.github.io/ProjectWeek/PW27_2018_Boston/)
+* February 13, 2018: [Molecular Med TRI-CON Precision Medicine](http://www.triconference.com/Precision-Medicine/): Andrey Fedorov presents at the "Emerging Role of Radiomics in Precision Medicine" session on "Data Standards in Radiomics Research"
 
 ### 2017
 * January 9-13: [Winter Project week in Boston](https://na-mic.org/wiki/2017_Winter_Project_Week)
@@ -21,7 +20,6 @@ subheadline: "Presentations, tutorials, meetings"
     *  RSNA refresher course RC425: Quantitative Image Analysis Tools: Informatics tools and databases. Andrey Fedorov: "Quantitative image analysis tools: Communicating quantitative image analysis results"
 * November 11: Alliance for Clinical Trials in Oncology annual meeting. Andrey Fedorov (QIICR) and Michael Jacobs (Johns Hopkins) presented to the Genitourinary Committee on the Quantitative Imaging Network and QIICR-developed tools.
 * September 10: Tutorial at the 2017 Medical Image Computing and Computer Assisted Interventions (MICCAI) conference: ["21st Century DICOM for Quantitative Imaging Research: Why, What, and How"](http://qiicr.org/dicom4miccai/)
-* June 17: [Invited presentation at University of Bremen: Andrey Fedorov, "DICOM for Medical Image Computing Research"](http://ioi.cs.uni-bremen.de/?p=1246)
 * March 27-30: American Medical Informatics Association (AMIA) Joint Summits on Translational Science. Podium presentation: Fedorov A, Rubin D, Clunie D, Pieper S, Kikinis R. "Standardized communications of quantitative image analysis results using DICOM: Establishing interoperability through outreach and community engagement."
 
 ### 2016
@@ -29,6 +27,7 @@ subheadline: "Presentations, tutorials, meetings"
     *  Quantitative Imaging Reading Room (QIRR) booth: [Interoperable Communication of Quantitative Image Analysis Results Using the DICOM Standard (DICOM4QI)](https://qiicr.gitbooks.io/dicom4qi/)
 * January 4-8: [Winter Project week in Boston](http://wiki.na-mic.org/Wiki/index.php/2016_Winter_Project_Week)
 * April 27: Invited presentation at the 2016 Gloria and Mark Snyder Symposium for Cancer Medicine, Stony Brook, NY.
+* June 17: [Invited presentation at University of Bremen: Andrey Fedorov, "DICOM for Medical Image Computing Research"](http://ioi.cs.uni-bremen.de/?p=1246)
 
 ### 2015
 * November 26 - December 4: A number of QIICR and 3D Slicer events took place at the 101th Annual Meeting of the Radiological Society of North America, RSNA 2015, Chicago, IL. See the full schedule [here](http://wiki.na-mic.org/Wiki/index.php/RSNA_2015)
