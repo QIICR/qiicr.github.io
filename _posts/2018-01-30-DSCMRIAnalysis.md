@@ -29,7 +29,7 @@ This extension can be used together with the [MultiVolume Explorer](https://www.
 
 # Publications
 
-N/A
+* Schmainda KM, Prah MA, Rand SD, et al. Multisite Concordance of DSC-MRI Analysis for Brain Tumors: Results of a National Cancer Institute Quantitative Imaging Network Collaborative Project. AJNR Am J Neuroradiol. 2018; http://dx.doi.org/10.3174/ajnr.A5675. - _Quantitative Imaging Network (QIN) evaluation of DSC MRI modeling tools that included DSC_MRI_Analysis_
 
 # Grants support
 
