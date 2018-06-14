@@ -12,6 +12,9 @@ subheadline: "Presentations, tutorials, meetings"
 ### 2018
 * January 8-12: [Winter Project week in Boston](https://na-mic.github.io/ProjectWeek/PW27_2018_Boston/)
 * February 13, 2018: [Molecular Med TRI-CON Precision Medicine](http://www.triconference.com/Precision-Medicine/): Andrey Fedorov presents at the "Emerging Role of Radiomics in Precision Medicine" session on "Data Standards in Radiomics Research"
+* April 23, 2018: Andrey Fedorov presents on "Data Standardization for Advancing the Role of AI in Radiology" at the 2018 World Medical Innovation Forum; watch the talk [here](https://youtu.be/QDS9xXswWc8)
+* May 9, 2018: Andrey Fedorov presents as part of the NCI CBIIT Speaker Series: "Your source code is your data: Data engineering for medical imaging research in the era of AI"; watch the talk [here](https://youtu.be/-euNcI0ta1c)
+* May 23, 2018: QIICR update at the annual ITCR Face to Face meeting, see slides [here](https://drive.google.com/file/d/1sFEZHXJPG6oKrY8ThTXv7trzNf9oT3xD/view). All of the slides from the meeting are available [here](https://nciphub.org/groups/itcr/itcr_2018_annual_meeting).
 
 ### 2017
 * January 9-13: [Winter Project week in Boston](https://na-mic.org/wiki/2017_Winter_Project_Week)
