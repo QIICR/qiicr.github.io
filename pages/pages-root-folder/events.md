@@ -28,9 +28,11 @@ subheadline: "Presentations, tutorials, meetings"
 ### 2016
 * November 27-December 2: 102nd Annual Meeting of the Radiological Society of North America, RSNA 2016, Chicago, IL. See the full schedule [here](http://wiki.na-mic.org/Wiki/index.php/RSNA_2016)
     *  Quantitative Imaging Reading Room (QIRR) booth: [Interoperable Communication of Quantitative Image Analysis Results Using the DICOM Standard (DICOM4QI)](https://qiicr.gitbooks.io/dicom4qi/)
-* January 4-8: [Winter Project week in Boston](http://wiki.na-mic.org/Wiki/index.php/2016_Winter_Project_Week)
-* April 27: Invited presentation at the 2016 Gloria and Mark Snyder Symposium for Cancer Medicine, Stony Brook, NY.
 * June 17: [Invited presentation at University of Bremen: Andrey Fedorov, "DICOM for Medical Image Computing Research"](http://ioi.cs.uni-bremen.de/?p=1246)
+* April 27: Invited presentation at the 2016 Gloria and Mark Snyder Symposium for Cancer Medicine, Stony Brook, NY.
+* March 13: The Role	of Academic Technology Development in Cancer Research:
+Workshop organized by the National Cancer Institute Informatics Technology for Cancer Research community at the CI4CC 2016 Spring Symposium (co-chairs Andrey Fedorov and Mary Goldman) ([web site with the materials](http://qiicr.org/CI4CC-Spring2016-ASW/))
+* January 4-8: [Winter Project week in Boston](http://wiki.na-mic.org/Wiki/index.php/2016_Winter_Project_Week)
 
 ### 2015
 * November 26 - December 4: A number of QIICR and 3D Slicer events took place at the 101th Annual Meeting of the Radiological Society of North America, RSNA 2015, Chicago, IL. See the full schedule [here](http://wiki.na-mic.org/Wiki/index.php/RSNA_2015)
