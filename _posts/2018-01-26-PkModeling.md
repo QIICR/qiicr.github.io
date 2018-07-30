@@ -27,7 +27,7 @@ This extension can be used together with the [MultiVolume Explorer](https://www.
 
 **Documentation**: [link](https://www.slicer.org/wiki/Documentation/Nightly/Modules/PkModeling)
 
-**Source code**: [link](https://github.com/millerjv/PkModeling)
+**Source code**: [link](https://github.com/QIICR/PkModeling)
 
 # Publications
 
