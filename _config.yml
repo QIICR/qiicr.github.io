@@ -24,7 +24,7 @@ author: fedorov
 
 # This URL is the main address for absolute links. Don't include a slash at the end.
 #
-url: 'http://qiicr.org'
+url: 'https://qiicr.org'
 baseurl: ''
 
 # This is for the editing function in _/includes/improve_content
@@ -37,7 +37,7 @@ improve_content: https://github.com/qiicr/qiicr.github.io/edit/master
 # Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
 #
-urlimg: 'http://qiicr.org/images/'
+urlimg: 'https://qiicr.org/images/'
 
 
 # Logo size is 600x80 pixels
